@@ -8,6 +8,7 @@ const plateSchema = new mongoose.Schema({
   plateType: { type: String, required: true },
   issueDate: { type: Date, required: true },
   expiryDate: { type: Date, required: true },
+  assignedTo: { type: String },
   signedOut: { type: Boolean, default: false },
   signInLogs: [
     {
